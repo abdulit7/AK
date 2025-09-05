@@ -638,7 +638,6 @@ from expense import expense_view
 from sale import sale_view
 from menu import menu_view
 from product import product_view
-from order import order_view
 from setting import settings_view
 from employee import employee_view
 from login import login_view
@@ -828,4 +827,5 @@ if __name__ == "__main__":
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     ft.app(target=main, assets_dir="assets")
+
     loop.close()
